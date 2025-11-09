@@ -48,7 +48,19 @@ http://localhost/meu-projeto/
 
 ## 📁 Estrutura de Arquivos
 
-devhome-iot/ ├── index.html ← Interface principal ├── css/ │ └── style.css ← Estilos (Personalizados) ├── js/ │ └── dashboard.js ← Lógica JavaScript (com Thresholds) ├── api/ │ ├── status.php ← Verifica se API está online │ ├── sensor-data.php ← Recebe dados dos sensores │ └── dashboard.php ← Retorna histórico └── data/ └── sensor-readings.json ← Dados armazenados
+devhome-iot/
+├── index.html              ← Interface principal
+├── css/
+│   └── style.css          ← Estilos (PERSONALIZE AQUI!)
+├── js/
+│   └── dashboard.js       ← Lógica JavaScript
+├── api/
+│   ├── status.php         ← Verifica se API está online
+│   ├── sensor-data.php    ← Recebe dados dos sensores
+│   └── dashboard.php      ← Retorna histórico
+└── data/
+    └── sensor-readings.json  ← Dados armazenados
+
 
 
 ## 🎨 Personalização Realizada
