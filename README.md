@@ -114,11 +114,11 @@ http://localhost/meu-projeto/api/sensor-data.php?action=clear_all
 
 ## 👥 Equipe
 
-- **Membro 1**: Rafael Pereira - 41764510 - [Função]
-- **Membro 2**: Luís Felipe Colaboni - 41949731 - [Função]
-- **Membro 3**: Raul Borges - 42923255 - [Função]
-- **Membro 4**: Raphael Siqueira - 45342440 - [Função]
-- **Membro 5**: Juan Carlo da Silva  - 42318947 - [Função]
+- **Membro 1**: Rafael Pereira - 41764510 - Líder de Projeto e Desenvolvedor Full-Stack
+- **Membro 2**: Luís Felipe Colaboni - 41949731 - Desenvolvedor Backend
+- **Membro 3**: Raul Borges - 42923255 - Desenvolvedor Frontend (UI/UX)
+- **Membro 4**: Raphael Siqueira - 45342440 - Desenvolvedor Frontend 
+- **Membro 5**: Juan Carlo da Silva  - 42318947 - AGUARDANDO
 
 ## 📚 Conceitos Aplicados
 
@@ -153,10 +153,10 @@ http://localhost/meu-projeto/api/sensor-data.php?action=clear_all
 
 ## 📞 Suporte
 
-Dúvidas? Fale com o professor ou consulte a documentação no Moodle.
+Dúvidas? Entre em contato com os dos membros da equipe.
 
 ---
 
-**Desenvolvido por**: [Nome do Grupo]  
-**Data**: [Data]  
+**Desenvolvido por**: DevHome IoT  
+**Data**: Novembro de 2025 
 **Disciplina**: Desenvolvimento Web com IoT
