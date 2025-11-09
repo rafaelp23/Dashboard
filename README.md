@@ -50,7 +50,7 @@ Este é um sistema de monitoramento IoT focado em **Monitoramento Ambiental Resi
 ## 📁 Estrutura de Arquivos
 
 ```
-meu-projeto/
+devhome-iot/
 ├── index.html              ← Interface principal
 ├── css/
 │   └── style.css          ← Estilos (PERSONALIZE AQUI!)
