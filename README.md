@@ -114,11 +114,11 @@ http://localhost/meu-projeto/api/sensor-data.php?action=clear_all
 
 ## 👥 Equipe
 
-- **Membro 1**: [Nome] - [RGM] - [Função]
-- **Membro 2**: [Nome] - [RGM] - [Função]
-- **Membro 3**: [Nome] - [RGM] - [Função]
-- **Membro 4**: [Nome] - [RGM] - [Função]
-- **Membro 5**: [Nome] - [RGM] - [Função]
+- **Membro 1**: Rafael Pereira - 41764510 - [Função]
+- **Membro 2**: Luís Felipe Colaboni - 41949731 - [Função]
+- **Membro 3**: Raul Borges - 42923255 - [Função]
+- **Membro 4**: Raphael Siqueira - 45342440 - [Função]
+- **Membro 5**: Juan Carlo da Silva  - 42318947 - [Função]
 
 ## 📚 Conceitos Aplicados
 
