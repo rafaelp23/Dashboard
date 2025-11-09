@@ -62,3 +62,18 @@ A interface foi personalizada com um **Tema Azul "Corporate"** para clareza prof
 ## 📁 Estrutura de Arquivos (Versão Demo)
 
 A versão de portfólio (sem PHP) utiliza esta estrutura simplificada:
+dashboard-iot-demo/ 
+├── index.html ← Interface principal 
+├── css/ │ 
+└── style.css ← Estilos (Tema Corporate)
+ └── js/
+  └── dashboard.js ← Lógica (LocalStorage + Alertas)
+
+
+
+  ## 👤 Autor
+
+**Rafael Pereira**
+
+* **GitHub:** https://github.com/rafaelp23
+* **LinkedIn:** https://www.linkedin.com/in/rafael-pereira-6a8b602a4/
