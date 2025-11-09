@@ -12,6 +12,7 @@ Este é um sistema de monitoramento IoT focado em **Monitoramento Ambiental Resi
 - ✅ Validar dados no backend e frontend
 - ✅ Persistir dados em JSON
 - ✅ Desenvolver dashboard em tempo real
+- ✅ Implementar sistema de alertas visuais (3 níveis)
 
 ## 📊 Sensores Monitorados
 
@@ -30,86 +31,69 @@ Este é um sistema de monitoramento IoT focado em **Monitoramento Ambiental Resi
 ### Passo a Passo
 
 1. **Copie o projeto para o htdocs do XAMPP**
-   ```
-   C:\xampp\htdocs\meu-projeto\
-   ```
+C:\xampp\htdocs\meu-projeto\
+
 
 2. **Inicie o Apache no XAMPP**
 
 3. **Acesse no navegador**
-   ```
-   http://localhost/meu-projeto/
-   ```
+http://localhost/meu-projeto/
+
 
 4. **Teste o sistema**
-   - Preencha o formulário
-   - Clique em "Enviar Leitura"
-   - Veja os dados no monitor em tempo real
-   - Confira o histórico
+- Preencha o formulário
+- Clique em "Enviar Leitura"
+- Veja os dados no monitor em tempo real
+- Confira o histórico
 
 ## 📁 Estrutura de Arquivos
 
-```
-devhome-iot/
-├── index.html              ← Interface principal
-├── css/
-│   └── style.css          ← Estilos (PERSONALIZE AQUI!)
-├── js/
-│   └── dashboard.js       ← Lógica JavaScript
-├── api/
-│   ├── status.php         ← Verifica se API está online
-│   ├── sensor-data.php    ← Recebe dados dos sensores
-│   └── dashboard.php      ← Retorna histórico
-└── data/
-    └── sensor-readings.json  ← Dados armazenados
-```
+devhome-iot/ ├── index.html ← Interface principal ├── css/ │ └── style.css ← Estilos (Personalizados) ├── js/ │ └── dashboard.js ← Lógica JavaScript (com Thresholds) ├── api/ │ ├── status.php ← Verifica se API está online │ ├── sensor-data.php ← Recebe dados dos sensores │ └── dashboard.php ← Retorna histórico └── data/ └── sensor-readings.json ← Dados armazenados
 
-## 🎨 Personalização
 
-### Cores (no arquivo `css/style.css`)
+## 🎨 Personalização Realizada
 
-Procure pela cor principal e altere:
-```css
-/* Linha ~30 aproximadamente */
-color: #2E7D32;  /* ← Mude para sua cor favorita! */
-```
+O layout padrão foi modificado para um **Tema Azul "Corporate"** profissional, melhorando a clareza visual dos alertas, conforme as diretrizes do projeto.
 
-### Ícones (no arquivo `index.html`)
+### 1. Paleta de Cores (em `css/style.css`)
 
-Troque os emojis por outros:
-```html
-<div class="icon">🌡️</div>  <!-- ← Mude o emoji aqui -->
-```
+A paleta de cores original (verde) foi substituída para criar uma hierarquia visual clara para os alertas:
 
-### Título (no arquivo `index.html`)
+- **Cor Principal (Normal):** `#2196F3` (Azul)
+  - *Justificativa:* Transmite calma, confiança e estabilidade quando os sensores estão em níveis normais.
+- **Cor de Alerta (Moderado):** `#FF5722` (Laranja-Vermelho)
+  - *Justificativa:* Cor de "atenção" vibrante, que se destaca do azul sem ser tão agressiva quanto o alerta de perigo.
+- **Cor de Perigo (Perigoso):** `#D32F2F` (Vermelho Escuro)
+  - *Justificativa:* Cor universal para "perigo". O tom escuro é profissional e indica uma necessidade de ação imediata, ativando a animação `cardShake`.
 
-```html
-<h1>🏠 Seu Título Personalizado</h1>
-```
+### 2. Thresholds (em `js/dashboard.js`)
+
+Os limites (`THRESHOLDS`) para cada sensor foram configurados na lógica do JavaScript para implementar o sistema de 3 níveis, de acordo com o contexto residencial.
+
+### 3. Título e Ícones (em `index.html`)
+
+O título e os ícones foram mantidos para clareza e identificação rápida de cada sensor.
 
 ## 🧪 Como Testar a API
 
 ### Teste 1: Verificar Status
-```
 http://localhost/meu-projeto/api/status.php
-```
+
 
 ### Teste 2: Ver Histórico
-```
 http://localhost/meu-projeto/api/dashboard.php
-```
+
 
 ### Teste 3: Limpar Dados
-```
 http://localhost/meu-projeto/api/sensor-data.php?action=clear_all
-```
+
 
 ## 📝 O Que Você Deve Entregar
 
 1. ✅ Código funcionando 100%
 2. ✅ Este README.md preenchido
 3. ✅ Comentários explicativos no código
-4. ✅ Print screens do sistema funcionando
+4. ✅ Imprimir telas do sistema funcionando
 5. ✅ Apresentação de 15 minutos
 
 ## 👥 Equipe
@@ -117,14 +101,14 @@ http://localhost/meu-projeto/api/sensor-data.php?action=clear_all
 - **Membro 1**: Rafael Pereira - 41764510 - Líder de Projeto e Desenvolvedor Full-Stack
 - **Membro 2**: Luís Felipe Colaboni - 41949731 - Desenvolvedor Backend
 - **Membro 3**: Raul Borges - 42923255 - Desenvolvedor Frontend (UI/UX)
-- **Membro 4**: Raphael Siqueira - 45342440 - Desenvolvedor Frontend 
-- **Membro 5**: Juan Carlo da Silva  - 42318947 - AGUARDANDO
+- **Membro 4**: Raphael Siqueira - 45342440 - Desenvolvedor Frontend
+- **Membro 5**: Juan Carlo da Silva - 42318947 - AGUARDANDO
 
 ## 📚 Conceitos Aplicados
 
 ### Frontend
 - HTML5 semântico
-- CSS3 com Flexbox e Grid
+- CSS3 com Flexbox e Animações (`@keyframes`)
 - JavaScript Vanilla (Fetch API)
 - DOM Manipulation
 
@@ -153,10 +137,10 @@ http://localhost/meu-projeto/api/sensor-data.php?action=clear_all
 
 ## 📞 Suporte
 
-Dúvidas? Entre em contato com os dos membros da equipe.
+Dúvidas? Entre em contato com os membros da equipe.
 
 ---
 
 **Desenvolvido por**: DevHome IoT  
-**Data**: Novembro de 2025 
+**Data**: Novembro de 2025  
 **Disciplina**: Desenvolvimento Web com IoT
